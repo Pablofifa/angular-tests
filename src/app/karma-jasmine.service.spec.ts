@@ -28,4 +28,21 @@ describe('KarmaJasmineService', () => {
     expect(resultado).toBe(5);
   });
 
+   it('debería restar dos números correctamente', () => {
+    const resultado = service.restar(2, 3);
+    expect(resultado).toBe(-1);
+  });
+
+  it('debería multiplicar dos números correctamente', () => {
+    const resultado = service.multiplicar(2, 3);
+    expect(resultado).toBe(6);
+  });
+
+  it('debería dividir dos números correctamente', () => {
+    const resultado = service.dividir(2, 3);
+    expect(resultado).toBe(0.6666666666666666);
+  });
+
+  
+
 });
