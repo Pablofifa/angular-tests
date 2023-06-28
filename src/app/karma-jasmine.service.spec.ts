@@ -42,7 +42,23 @@ describe('KarmaJasmineService', () => {
     const resultado = service.dividir(2, 3);
     expect(resultado).toBe(0.6666666666666666);
   });
-
+/*Función para verificar si un número es par
+Función para verificar si una cadena es un palíndromo
+Función para calcular el factorial de un número*/
   
+it('debería verificar si un número es par', () => {
+  const resultado = service.esPar(22);
+  expect(resultado).toBe(true);
+});
+
+it('debería verificar si una cadena es un palíndromo', () => {
+  const resultado = service.esPalindromo("Pablo");
+  expect(resultado).toBe(false);
+});
+
+it('debería calcular el factorial de un número', () => {
+  const resultado = service.factorial(5);
+  expect(resultado).toBe(120);
+});
 
 });
